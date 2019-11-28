@@ -1,0 +1,44 @@
+# curl -XPOST -H "Content-Type: application/json" -d '{"userId":1, "balance":100.00}' http://localhost:8900/bank/account
+POST http://localhost:8900/bank/account
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "balance": 100.00
+}
+
+###
+#curl -XPOST -H "Content-Type: application/json" -d '{"userId":2, "balance":100.00}' http: //localhost:8900/bank/account
+POST http://localhost:8900/bank/account
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "balance": 100.00
+}
+
+###
+
+# curl -XPOST -H "Content-Type: application/json" -d '{"userIdFrom":1, "userIdTo":2, "amount":10.0}' http://localhost:8900/bank/transfer
+POST http://localhost:8900/bank/transfer
+Content-Type: application/json
+
+{
+  "userIdFrom": 1,
+  "userIdTo": 2,
+  "amount": 10.0
+}
+
+###
+
+# curl -XGET 'http://localhost:8900/bank/account/balance?userId=1'
+GET http://localhost:8900/bank/account/balance?userId=1
+
+###
+
+# curl -XGET 'http://localhost:8900/bank/account/balance?userId=2'
+GET http://localhost:8900/bank/account/balance?userId=2
+
+###
+
+

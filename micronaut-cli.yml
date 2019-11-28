@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: ru.ignatov
+---
+testFramework: junit
+sourceLanguage: java

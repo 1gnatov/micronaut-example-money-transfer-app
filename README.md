@@ -4,14 +4,14 @@ Simple app on Java 11 and Micronaut for money transfer between accounts. Data st
 
 To run, you need Java 11 jdk/jre to compile and run, or docker installed
 
-#####Java 11
+##### Java 11
 
 ```
 ./gradlew build                                #or gradle.bat build for windows systems
 ./gradlew run
 ```
 
-#####Docker
+##### Docker
 ```
 docker build . -t mn-money-transfer:latest
 docker run -p 8900:8900 mydocker:latest
